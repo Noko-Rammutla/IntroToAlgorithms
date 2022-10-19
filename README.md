@@ -6,14 +6,25 @@ It is part of my attempt at learning Java, and the code is not meant to be used 
 # Requirements
 
 * [OpenJDK 17](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)
+* [Gradle](https://gradle.org)
 
 # Running
 
 Use the following commands to run the program:
 
 ```bash
-javac InsertSort.java
-java InsertSort
+ ./gradlew build
 ```
 
-It will print out `Hello World` when run successfully.
+The test results can be viewed by opening the file `lib/build/reports/tests/test/index.html`.
+
+```bash
+open lib/build/reports/tests/test/index.html
+```
+
+# Debugging (IntelliJ Community Edition)
+
+1. Open the folder `IntroToAlgorithms` in IntelliJ.
+2. Update Gradle preferences in IntelliJ to run tests using IntelliJ.
+  * https://stackoverflow.com/a/60270401
+  * `Preferences -> Build, Execution, Deployment -> Gradle -> Run tests using -> IntelliJ IDEA` 
